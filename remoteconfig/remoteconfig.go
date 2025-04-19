@@ -67,6 +67,7 @@ func newRcClient(client *internal.HTTPClient, conf *internal.RemoteConfigClientC
 		internal.WithHeader("x-goog-api-client", internal.GetMetricsHeader(conf.Version)),
 	}
 
+	// Handles errors for non-success HTTP status codes from Remote Config servers.
 	client.CreateErrFn = handleRemoteConfigError
 
 	return &rcClient{
