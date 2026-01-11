@@ -1,6 +1,6 @@
 module firebase.google.com/go/v4
 
-go 1.21
+go 1.23.0
 
 require (
 	cloud.google.com/go/firestore v1.18.0
@@ -8,7 +8,7 @@ require (
 	github.com/MicahParks/keyfunc v1.9.0
 	github.com/golang-jwt/jwt/v4 v4.5.1
 	github.com/google/go-cmp v0.6.0
-	golang.org/x/oauth2 v0.25.0
+	golang.org/x/oauth2 v0.27.0
 	google.golang.org/api v0.215.0
 	google.golang.org/appengine/v2 v2.0.6
 )
